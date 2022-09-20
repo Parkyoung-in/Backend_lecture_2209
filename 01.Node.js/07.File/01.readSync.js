@@ -8,5 +8,5 @@ console.log(buffer);                // ASCII code 값
 console.log(buffer.toString());     // A quick brown fox jumps over the lazy dog.
 
 // 문자로 읽을 경우엔 인코딩 정보가 필요하
-const text = fs.readFileSync('tmp/textfile.txt', 'utf8')
+const text = fs.readFileSync('tmp/textfile.txt', 'utf8x')
 console.log(text);

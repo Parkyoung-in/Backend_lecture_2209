@@ -14,6 +14,9 @@ function delayP(ms) {
 
 // Consumer(함수 불러 쓰는 법)
 delayP(1000)
-    .then((val) => {
+    /* .then((val) => {
         console.log(val);   // resolve에 해당됨
-    });
+    })
+    .catch(err => {console.log(err);}); */
+    .then(console.log)          // 이렇게 써도 실행됨
+    .catch(console.log);        // 이렇게 써도 실행됨
