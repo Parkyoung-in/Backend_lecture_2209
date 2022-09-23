@@ -9,13 +9,13 @@ desc city;      #주석
 
 /* 
 SELECT 필드명 FROM 테이블명
-    WHERE 조건
-    ORDER BY 필드명 순서 (정렬)
-    LIMIT 숫자 OFFSET 숫자(가지고 오는 갯수)
-    GROUP BY 필드명
-    HAVING 그룹 조건
     JOIN 테이블명
     ON 조인 조건;
+    WHERE 조건
+    GROUP BY 필드명
+    HAVING 그룹 조건
+    ORDER BY 필드명 순서
+    LIMIT 숫자 OFFSET 숫자
  */
 
 select * from city;
