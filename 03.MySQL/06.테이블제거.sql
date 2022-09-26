@@ -11,3 +11,4 @@ TRUNCATE TABLE citycopy;
 # citycopy 테이블 cc로 이름 변경
 RENAME TABLE citycopy TO cc;
 SHOW TABLES;
+

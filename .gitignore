@@ -1,6 +1,7 @@
 # CK worte
 tmp/
 tmp.html
+mysql.json
 # Logs
 logs
 *.log

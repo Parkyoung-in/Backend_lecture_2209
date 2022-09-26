@@ -37,3 +37,9 @@ SELECT DATE_sub(NOW(), INTERVAL 3 month);
 # D-day
 SELECT TO_DAYS('2022-11-17') - TO_DAYS(NOW());
 
+# 요일 : 1(일요일)
+SELECT DAYOFWEEK(dt) FROM dateTable;
+
+#날짜 시간
+SELECT date_format(dt, '%y-%m-%d %h:%i') FROM dateTable;
+

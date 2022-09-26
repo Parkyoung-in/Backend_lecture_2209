@@ -18,3 +18,4 @@ UPDATE city, (SELECT * FROM city WHERE district ='Chollanam') b
 SET city.population=b.population+50000
 WHERE city.id=b.id;
 SELECT * FROM city WHERE district='chollanam';
+
