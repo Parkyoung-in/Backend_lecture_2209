@@ -9,14 +9,14 @@ app.get('/', (req, res) => {
 
 app.get('/image', (req, res) => {
     fs.readFile('public/강아지.jpg', (err, image) => {
-        res.type('image/jpg');
+        res.type('image/jpg');      // MIME type
         res.send(image);
     });
 });
 
 app.get('/audio', (req, res) => {
     fs.readFile('public/mp3_sample.mp3', (err, image) => {
-        res.type('audio/mp3');
+        res.type('audio/mp3');      // MIME type
         res.send(image);
     });
 });
