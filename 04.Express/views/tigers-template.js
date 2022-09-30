@@ -7,22 +7,24 @@ module.exports = {
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script src="https://kit.fontawesome.com/95a6a0adef.js" crossorigin="anonymous"></script>
             <title>기아 타이거즈</title>
             <style>
                 th, tr { text-align: center }
             </style>
         </head>
         <body style="margin: 50px;">
-            <h1>기아 타이거즈 선수단</h1>
+            <img src="/tigers/emblem.jpg">
             <button onclick="location.href='/create'">추가</button>
             <hr>
             <table>
                 <tr>
                     <th>ID</th>
                     <th>선수명</th>
+                    <th>사진</th>
                     <th>백넘버</th>
                     <th>포지션</th>
-                    <th>액션</th>
+                    <th>수정/삭제</th>
                 </tr>
                 ${trs}
             </table>
@@ -36,9 +38,10 @@ module.exports = {
         for (let row of rows) {
             trs += '<tr>';
             trs += `<td>${row.id}</td><td>${row.player}</td>`;
+            trs += `<td><img src="/tigers/${row.player}.jpg"></td>`;
             trs += `<td>${row.backNo}</td><td>${row.position}</td>`;
-            trs += `<td><a href="/update?id=${row.id}">수정</a>, 
-                        <a href="/delete?id=${row.id}">삭제</a></td>`;
+            trs += `<td><a href="/update?id=${row.id}"><i class="fa-solid fa-user-pen"></i></a>, 
+                        <a href="/delete?id=${row.id}"><i class="fa-solid fa-user-minus"></i></a></td>`;
             trs += '</tr>';
         }
         return trs;
